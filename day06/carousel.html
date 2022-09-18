@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <style>
+        /*
+         Main color: #087f5b
+         Grey color: #343a40
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #343a40;
+            line-height: 1;
+        }
+
+        .item {
+            width: 800px;
+            margin: 100px auto;
+            background: #087f5b;
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            gap: 86px;
+            padding: 32px;
+            padding: 32px 48px 32px 86px;
+
+            position: relative;
+        }
+
+        img {
+            height: 215px;
+            border-radius: 12px;
+            transform: scale(1.5);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            color: #c3fae8;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-job {
+            font-size: 12px;
+            color: #c3fae8;
+        }
+
+        .btn {
+            background-color: #fff;
+            border: none;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .icon-btn {
+            width: 48px;
+            height: 24px;
+            stroke: #087f5b;
+        }
+
+        .leftBtn {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .rightBtn {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        .dots {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-45%, 24px);
+
+            display: flex;
+            gap: 12px;
+        }
+
+        .dot {
+            background-color: #fff;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #087f5b;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .fill {
+            background-color: #087f5b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="item">
+            <img src="../images/carousel/img.jpg" alt="拽中之王">
+            <blockquote>
+                <p class="testimonial-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    reprehenderit error facilis, dolore
+                    laudantium consequuntur iure saepe maxime "</p>
+                <p class="testimonial-author">
+                    Maria de Almeida
+                </p>
+                <p class="testimonial-job">
+                    Senir Product Manager at EDP Comercial
+                </p>
+            </blockquote>
+            <button class="btn leftBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-btn">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button class="btn rightBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-btn">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+            <div class="dots">
+                <div class="dot fill">&nbsp;</div>
+                <div class="dot">&nbsp;</div>
+                <div class="dot">&nbsp;</div>
+                <div class="dot">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
