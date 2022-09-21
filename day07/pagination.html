@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         Main color: #087f5b
+         Grey color: #343a40
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #343a40;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination {
+            /* width: 400px; */
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            margin: 100px auto;
+        }
+
+        .Btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: none;
+            border: 1px solid #087f5b;
+        }
+
+        .Btn:hover {
+            background-color: #087f5b;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .Btn:hover .iconBtn {
+            stroke: #fff;
+        }
+
+        .iconBtn {
+            height: 24px;
+            width: 24px;
+            line-height: 24px;
+            stroke: #087f5b;
+        }
+
+        a {
+            color: #343a40;
+
+        }
+
+        .pageLine:link,
+        .pageLine:visited {
+            display: inline-block;
+            border-radius: 50%;
+            text-decoration: none;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            cursor: pointer;
+        }
+
+        .pageLine:hover,
+        .pageLine:active,
+        .pageLine.currentPage {
+            background-color: #087f5b;
+            color: #fff;
+        }
+    </style>
+</head>
+<div class="pagination">
+    <button class="Btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="iconBtn">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+    </button>
+    <a href="#" class="pageLine">1</a>
+    <a href="#" class="pageLine">2</a>
+    <a href="#" class="pageLine currentPage">3</a>
+    <a href="#" class="pageLine">4</a>
+    <a href="#" class="pageLine">5</a>
+    <a href="#" class="pageLine">6</a>
+    <span class="dots">...</span>
+    <a href='#' class="pageLine">23</a>
+    <button class="Btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="iconBtn">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+    </button>
+</div>
+
+<body>
+
+</body>
+
+</html>
